@@ -1,6 +1,6 @@
-# Talk: enumeración de identidad celular (LATAM)
+# Enumeración de identidad celular (LATAM)
 
-Material reutilizable para talks y labs sobre **enumeración mínima de telefonía** en Latinoamérica: solo identidad de celda servidora (`mcc`, `mnc`, `lac_or_tac`, `cell_id`), sin geodatos ni métricas de radio.
+Proyecto dedicado a la **enumeración mínima de telefonía** en Latinoamérica: solo identidad de celda servidora (`mcc`, `mnc`, `lac_or_tac`, `cell_id`), sin geodatos ni métricas de radio.
 
 ## Objetivo
 
@@ -21,11 +21,11 @@ El contrato de datos vive en la prompt-spec:
 | [skill/](skill/) | Skill Cursor: cuándo y cómo generar o validar muestras |
 | [agent/](agent/) | Prompt de agente: flujos módem dedicado y Android para LATAM |
 
-## Flujo sugerido en talk o lab
+## Flujo sugerido
 
 ```text
-1. Cargar skill (docs/talk/skill/SKILL.md)
-2. Instruir al agente con docs/talk/agent/AGENT.md
+1. Cargar skill (skill/SKILL.md)
+2. Instruir al agente con agent/AGENT.md
 3. Obtener muestra JSON según plataforma (módem AT o Android)
 4. Validar contra el contrato de la prompt-spec
 ```
@@ -38,4 +38,4 @@ El contrato de datos vive en la prompt-spec:
 ## Fuera de alcance
 
 - Wardriving georreferenciado, CSV con lat/lon, vecinos, IMSI/IMEI, interceptación.
-- Detalles de un firmware concreto: este paquete es genérico para otros proyectos.
+- Detalles de un firmware concreto.
